@@ -3,8 +3,6 @@ import os
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple, TypeVar
 
-from abstract_singleton import AbstractSingleton, Singleton
-
 from auto_vicuna.__main__ import load_model
 from auto_vicuna.chat import chat_one_shot
 from auto_vicuna.conversation import make_conversation

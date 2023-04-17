@@ -246,7 +246,7 @@ class AutoGPTPVicuna(AutoGPTPluginTemplate):
             str: The resulting response.
         """
         roles = {message["role"] for message in messages}
-        last_message = messages.pop()
+        last_message = messages.pop()["content"]
         conv = make_conversation(
             "",
             list(roles),

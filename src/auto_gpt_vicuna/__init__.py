@@ -252,6 +252,8 @@ class AutoGPTPVicuna(AutoGPTPluginTemplate):
             list(roles),
             [(message["role"], message["content"]) for message in messages],
         )
+        if max_tokens > 2048:
+            max_tokens = 2048
         with torch.inference_mode():
             return chat_one_shot(
                 self.model,

@@ -1,2 +1,6 @@
-# (Coming Soon) Auto-GPT-Plugin-Template
-A starting point for developing your own plug-in for Auto-GPT
+# Auto-GPT-Vicuna Plugin
+
+Allows chat completions with auto-vicuna.
+
+See https://github.com/BillSchumacher/Auto-Vicuna for setup details.
+

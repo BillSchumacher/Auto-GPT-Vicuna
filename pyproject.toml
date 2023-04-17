@@ -3,12 +3,12 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "auto_gpt_plugin_template"
+name = "auto_gpt_vicuna"
 version = "0.0.1"
 authors = [
   { name="Bill Schumacher", email="34168009+BillSchumacher@users.noreply.github.com" },
 ]
-description = "The template plugin for Auto-GPT."
+description = "The Vicuna for Auto-GPT."
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
@@ -16,11 +16,11 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies = ["abstract-singleton"]
+dependencies = ["abstract-singleton", "auto-vicuna"]
 
 [project.urls]
-"Homepage" = "https://github.com/Torantulino/Auto-GPT-Plugin-Template"
-"Bug Tracker" = "https://github.com/Torantulino/Auto-GPT-Plugin-Template/issues"
+"Homepage" = "https://github.com/BillSchumacher/Auto-GPT-Vicuna"
+"Bug Tracker" = "https://github.com/BillSchumacher/Auto-GPT-Vicuna/issues"
 
 [tool.black]
 line-length = 88

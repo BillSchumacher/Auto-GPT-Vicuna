@@ -8,14 +8,14 @@ from abstract_singleton import AbstractSingleton, Singleton
 from auto_vicuna.__main__ import load_model
 from auto_vicuna.chat import chat_one_shot
 from auto_vicuna.conversation import make_conversation
-
+from auto_gpt_plugin_template import AutoGPTPluginTemplate
 
 import torch
 
 PromptGenerator = TypeVar("PromptGenerator")
 
 
-class AutoGPTPluginTemplate(AbstractSingleton, metaclass=Singleton):
+class AutoGPTPVicuna(AutoGPTPluginTemplate):
     """
     This is the Vicuna local model  plugin for Auto-GPT.
     """

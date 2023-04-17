@@ -16,7 +16,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies = ["abstract-singleton", "auto-vicuna"]
+dependencies = ["abstract-singleton", "auto-vicuna", "auto-gpt-plugin-template"]
 
 [project.urls]
 "Homepage" = "https://github.com/BillSchumacher/Auto-GPT-Vicuna"

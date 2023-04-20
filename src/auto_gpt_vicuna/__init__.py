@@ -25,13 +25,14 @@ class AutoGPTPVicuna(AutoGPTPluginTemplate):
         self._description = "This is a Vicuna local model plugin."
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.vicuna_weights = os.environ.get("VICUNA_WEIGHTS", "")
+        self.load_8bit = os.environ.get("LOAD_8BIT", False)
 
         model, tokenizer = load_model(
             self.vicuna_weights,
             device=self.device,
             num_gpus=1,
             debug=False,
-            load_8bit=False,
+            load_8bit=self.load_8bit,
         )
         self.model = model
         self.tokenizer = tokenizer
